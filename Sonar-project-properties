@@ -1,5 +1,15 @@
-sonar.projectKey=task3
-sonar.projectName=Task 3
+sonar.projectKey=oop-group-13-border-layout-task
+sonar.projectName=Task--3 - OOP Group 13
 sonar.projectVersion=1.0
+
+sonar.host.url=http://localhost:9000
+
+sonar.language=java
+sonar.sourceEncoding=UTF-8
 sonar.sources=.
+sonar.exclusions=**/.idea/**,**/*.xml,**/*.json,**/*.md,**/*.iml,**/*.properties
+
 sonar.java.binaries=.
+
+sonar.log.level=INFO
+sonar.links.scm=https://github.com/OOP-group-13/Border-Layout-Task
