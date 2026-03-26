@@ -1,8 +1,0 @@
-sonar.projectKey=oop-group-13-border-layout-task
-sonar.projectName=Task--3 - OOP Group 13
-sonar.projectVersion=1.0
-sonar.sources=.
-sonar.java.binaries=.
-sonar.java.libraries=.
-sonar.sourceEncoding=UTF-8
-sonar.exclusions=**/.idea/**,**/*.xml,**/*.json,**/*.md,**/*.iml,**/*.properties
