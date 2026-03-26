@@ -1,0 +1,95 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import javax.swing.*;
+import java.awt.*;
+
+class GridLayoutAppTest {
+
+    @Test
+    void testTitle() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertEquals("Grid Layout Example", app.getTitle());
+        });
+    }
+
+    @Test
+    void testLayout() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertTrue(app.getContentPane().getLayout() instanceof GridLayout);
+        });
+    }
+
+    @Test
+    void testPanel1NotNull() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertNotNull(app.panel1);
+        });
+    }
+
+    @Test
+    void testPanel2NotNull() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertNotNull(app.panel2);
+        });
+    }
+
+    @Test
+    void testPanel3NotNull() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertNotNull(app.panel3);
+        });
+    }
+
+    @Test
+    void testPanel1Red() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertEquals(Color.RED, app.panel1.getBackground());
+        });
+    }
+
+    @Test
+    void testPanel2Green() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertEquals(Color.GREEN, app.panel2.getBackground());
+        });
+    }
+
+    @Test
+    void testPanel3Blue() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertEquals(Color.BLUE, app.panel3.getBackground());
+        });
+    }
+
+    @Test
+    void testCloseOperation() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertEquals(JFrame.EXIT_ON_CLOSE, app.getDefaultCloseOperation());
+        });
+    }
+
+    @Test
+    void testVisible() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertTrue(app.isVisible());
+        });
+    }
+
+    @Test
+    void testPanelCount() {
+        SwingUtilities.invokeLater(() -> {
+            GridLayoutApp app = new GridLayoutApp();
+            assertEquals(3, app.getContentPane().getComponentCount());
+        });
+    }
+}
